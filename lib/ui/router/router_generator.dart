@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../screens/auth/login_screen.dart';
 import '../screens/home/home_screen.dart';
 import '../screens/splash/splash_screen.dart';
+import '../screens/onboard-screen/onboard_screen.dart';
 import '404.dart';
 
 class RouterGenerator {
@@ -11,6 +12,7 @@ class RouterGenerator {
   static const routeQRCode = "/Qrcode";
   static const routeLogin = "/Login";
   static const routeRegister = "/Register";
+  static const routeOnBoard = "/routeOnBoard";
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     final args = settings.arguments;
@@ -23,6 +25,8 @@ class RouterGenerator {
         return MaterialPageRoute(builder: (_) => const HomeScreen());
       case routeLogin:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
+      case routeOnBoard:
+        return MaterialPageRoute(builder: (_) => const OnboardScreen());
       default:
         break;
     }

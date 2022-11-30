@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
               fontFamily: "Mulish",
               scaffoldBackgroundColor: Colors.white,
             ),
-            initialRoute: RouterGenerator.routeLogin,
+            initialRoute: RouterGenerator.routeSplash,
             onGenerateRoute: RouterGenerator.generateRoute));
   }
 }
